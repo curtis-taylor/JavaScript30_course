@@ -70,6 +70,17 @@
     // Sum up the instances of each of these
     const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];
 
+    let l2 = data.reduce((acc, item) => {
+      if(!(acc[item])) {
+        acc[item] = 1;
+    } else {
+         acc[item] =  acc[item] + 1;
+    }
+    
+    return acc;
+}, {})
+
+
   </script>
 </body>
 </html>
